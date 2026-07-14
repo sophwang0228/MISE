@@ -1,65 +1,64 @@
 import { useState, useEffect } from 'react';
 import Survey from './components/Survey.jsx';
 import MealPlan from './components/MealPlan.jsx';
-import ThemePicker, { THEMES } from './components/ThemePicker.jsx';
+import ThemePicker, { THEMES, getTheme } from './components/ThemePicker.jsx';
 import recipes from './data/recipes.json';
 import { filterRecipes, selectMeals, swapMeal } from './utils/matcher.js';
 
 const STORAGE_KEY = 'mise_saved_plan';
 const THEME_KEY   = 'mise_theme';
 
-function getThemeVars(themeId) {
-  return THEMES.find((t) => t.id === themeId)?.vars ?? THEMES[0].vars;
-}
-
 function Landing({ onStart, hasSavedPlan, onLoadSaved }) {
   return (
     <div className="landing">
       <div className="landing-inner">
+
+        <div className="landing-hero-emoji" aria-hidden="true">
+          🥗 🍳 🐟 🫘 🥦
+        </div>
+
         <div className="landing-eyebrow">✨ Friction-Free Nutrition</div>
         <h1 className="landing-title">
-          Stop <em>deciding</em> what to eat.<br />
-          Start <em>planning</em> it.
+          Stop deciding what<br />to eat every day.
         </h1>
         <p className="landing-body">
-          Most nutrition apps demand daily logging — exactly when your willpower is
-          lowest. MISE flips the model: one short weekly survey, a personalized meal
-          plan, and a ready-made grocery list. Front-load the thinking so you never
-          have to decide at 7pm on a Tuesday.
+          Plan once a week, eat well all week. One short survey → a personalized
+          meal plan → a ready-to-use grocery list. No daily logging. No decision
+          fatigue at 7pm.
         </p>
 
         <div className="landing-cta-row">
           <button className="cta-primary" onClick={onStart}>
-            Build my week's plan →
+            Build my week →
           </button>
           {hasSavedPlan && (
             <button className="cta-secondary" onClick={onLoadSaved}>
-              Load last plan
+              📋 Load last plan
             </button>
           )}
         </div>
 
         <div className="landing-pillars">
           <div className="pillar">
-            <span className="pillar-num">01</span>
-            <h3>Survey</h3>
-            <p>5 questions, under 60 seconds. No account needed.</p>
+            <span className="pillar-emoji">💬</span>
+            <h3>5 questions</h3>
+            <p>Goal, diet, time, meals, budget — takes under 60 seconds.</p>
           </div>
           <div className="pillar">
-            <span className="pillar-num">02</span>
-            <h3>Match</h3>
-            <p>Rules-based filtering across 45 hand-tagged recipes.</p>
+            <span className="pillar-emoji">🎯</span>
+            <h3>Matched meals</h3>
+            <p>45 hand-tagged recipes filtered exactly to your preferences.</p>
           </div>
           <div className="pillar">
-            <span className="pillar-num">03</span>
-            <h3>Shop</h3>
-            <p>One deduplicated list, sorted by store section.</p>
+            <span className="pillar-emoji">🛒</span>
+            <h3>One list</h3>
+            <p>Ingredients merged and grouped by store aisle. Done.</p>
           </div>
         </div>
 
-        <footer className="landing-footer">
-          Built on behavioral science — no daily logging, no calorie counting, no guilt.
-        </footer>
+        <div className="landing-science-note">
+          🧠 Grounded in behavioral science — precommitment, friction reduction, and ego depletion theory.
+        </div>
       </div>
     </div>
   );
@@ -72,10 +71,8 @@ export default function App() {
   const [filteredPool, setFilteredPool] = useState([]);
   const [hasSavedPlan, setHasSavedPlan] = useState(false);
   const [themeId, setThemeId] = useState(
-    () => localStorage.getItem(THEME_KEY) ?? 'rose'
+    () => localStorage.getItem(THEME_KEY) ?? 'lavender'
   );
-
-  const themeVars = getThemeVars(themeId);
 
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -125,6 +122,15 @@ export default function App() {
     }
   }
 
+  const theme = getTheme(themeId);
+
+  const themeVars = {
+    '--bg-gradient': theme.bg,
+    '--accent':      theme.accent,
+    '--accent-bg':   theme.accentBg,
+    '--accent-dim':  theme.accentDim,
+  };
+
   const content = (() => {
     if (phase === 'landing') {
       return (
@@ -150,8 +156,9 @@ export default function App() {
     }
     return (
       <div className="no-results">
-        <h2>No recipes matched 😔</h2>
-        <p>Try loosening your cooking time or dietary restrictions.</p>
+        <div style={{ fontSize: '3rem' }}>😔</div>
+        <h2>No recipes matched</h2>
+        <p>Try loosening your cooking time or dietary restriction.</p>
         <button className="cta-primary" onClick={() => setPhase('survey')}>
           Try again
         </button>
@@ -160,7 +167,7 @@ export default function App() {
   })();
 
   return (
-    <div style={themeVars}>
+    <div className="app-wrapper" style={themeVars}>
       {content}
       <ThemePicker currentTheme={themeId} onChange={handleThemeChange} />
     </div>
