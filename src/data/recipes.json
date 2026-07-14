@@ -1,0 +1,877 @@
+[
+  {
+    "id": "chicken-stirfry",
+    "name": "Chicken Stir Fry",
+    "proteinType": "poultry",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 25,
+    "budget": "medium",
+    "instructions": "1. Slice chicken breast into thin strips. 2. Heat oil in a wok over high heat. 3. Cook chicken 4–5 min until golden. 4. Add broccoli, bell pepper, and carrots; stir-fry 3 min. 5. Add soy sauce, garlic, and ginger; toss 1 min. 6. Serve over rice.",
+    "ingredients": [
+      { "item": "chicken breast", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "broccoli florets", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "red bell pepper", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "shredded carrots", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "soy sauce", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "fresh ginger", "amount": 1, "unit": "tsp", "category": "produce" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "white rice", "amount": 1.5, "unit": "cup", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "greek-chicken-bowl",
+    "name": "Greek Chicken Bowl",
+    "proteinType": "poultry",
+    "goals": ["muscle_gain", "general_health", "lose_weight"],
+    "diet": ["none", "gluten_free"],
+    "time_minutes": 30,
+    "budget": "medium",
+    "instructions": "1. Season chicken with oregano, lemon juice, garlic, salt, and pepper. 2. Cook in a skillet over medium-high heat 6–7 min per side. 3. Slice and serve over a base of quinoa. 4. Top with cucumber, tomatoes, olives, and red onion. 5. Drizzle with olive oil and a squeeze of lemon.",
+    "ingredients": [
+      { "item": "chicken breast", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "quinoa", "amount": 1, "unit": "cup", "category": "pantry" },
+      { "item": "cucumber", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "cherry tomatoes", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "kalamata olives", "amount": 0.25, "unit": "cup", "category": "pantry" },
+      { "item": "red onion", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "dried oregano", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "salmon-asparagus",
+    "name": "Pan-Seared Salmon with Asparagus",
+    "proteinType": "seafood",
+    "goals": ["lose_weight", "muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 20,
+    "budget": "medium",
+    "instructions": "1. Season salmon with salt, pepper, and lemon zest. 2. Sear in a hot skillet with olive oil, 4 min per side. 3. In the same pan, sauté asparagus with garlic for 3–4 min. 4. Squeeze lemon over everything and serve.",
+    "ingredients": [
+      { "item": "salmon fillet", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "asparagus", "amount": 1, "unit": "bunch", "category": "produce" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "turkey-tacos",
+    "name": "Ground Turkey Tacos",
+    "proteinType": "poultry",
+    "goals": ["muscle_gain", "general_health", "lose_weight"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 20,
+    "budget": "low",
+    "instructions": "1. Brown ground turkey in a skillet over medium heat, breaking up as it cooks. 2. Add taco seasoning and a splash of water; simmer 2 min. 3. Warm tortillas. 4. Fill with turkey, shredded cabbage, salsa, and lime juice.",
+    "ingredients": [
+      { "item": "ground turkey", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "taco seasoning", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "corn tortillas", "amount": 8, "unit": "whole", "category": "bakery" },
+      { "item": "shredded cabbage", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "salsa", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "item": "lime", "amount": 1, "unit": "whole", "category": "produce" }
+    ]
+  },
+  {
+    "id": "lemon-herb-chicken",
+    "name": "Baked Lemon Herb Chicken",
+    "proteinType": "poultry",
+    "goals": ["lose_weight", "general_health", "maintain"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 40,
+    "budget": "low",
+    "instructions": "1. Preheat oven to 400°F. 2. Rub chicken thighs with olive oil, lemon zest, garlic, rosemary, thyme, salt, and pepper. 3. Bake 35–40 min until cooked through. 4. Rest 5 min before serving.",
+    "ingredients": [
+      { "item": "chicken thighs", "amount": 4, "unit": "whole", "category": "protein" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "fresh rosemary", "amount": 2, "unit": "sprig", "category": "produce" },
+      { "item": "fresh thyme", "amount": 3, "unit": "sprig", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "shrimp-fried-rice",
+    "name": "Shrimp Fried Rice",
+    "proteinType": "seafood",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 25,
+    "budget": "medium",
+    "instructions": "1. Cook rice and let cool (or use day-old rice). 2. Scramble eggs in a wok and set aside. 3. Stir-fry shrimp with garlic until pink, 2 min. 4. Add rice, soy sauce, sesame oil, and frozen peas; toss 3 min. 5. Fold in eggs and top with scallions.",
+    "ingredients": [
+      { "item": "shrimp", "amount": 0.75, "unit": "lb", "category": "protein" },
+      { "item": "white rice", "amount": 2, "unit": "cup", "category": "pantry" },
+      { "item": "eggs", "amount": 2, "unit": "whole", "category": "protein" },
+      { "item": "frozen peas", "amount": 0.5, "unit": "cup", "category": "frozen" },
+      { "item": "soy sauce", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "scallions", "amount": 3, "unit": "whole", "category": "produce" }
+    ]
+  },
+  {
+    "id": "tuna-lettuce-wraps",
+    "name": "Tuna Salad Lettuce Wraps",
+    "proteinType": "seafood",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 10,
+    "budget": "low",
+    "instructions": "1. Drain tuna and mix with diced celery, red onion, Dijon mustard, lemon juice, and olive oil. 2. Season with salt and pepper. 3. Spoon into large butter lettuce leaves. 4. Top with sliced avocado.",
+    "ingredients": [
+      { "item": "canned tuna", "amount": 2, "unit": "can", "category": "pantry" },
+      { "item": "celery stalks", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "red onion", "amount": 0.25, "unit": "whole", "category": "produce" },
+      { "item": "Dijon mustard", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "olive oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "butter lettuce", "amount": 1, "unit": "head", "category": "produce" },
+      { "item": "avocado", "amount": 1, "unit": "whole", "category": "produce" }
+    ]
+  },
+  {
+    "id": "beef-broccoli",
+    "name": "Beef and Broccoli",
+    "proteinType": "beef",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 30,
+    "budget": "medium",
+    "instructions": "1. Slice flank steak thin against the grain. 2. Marinate in soy sauce, cornstarch, and baking soda for 10 min. 3. Stir-fry beef in batches until seared; set aside. 4. Cook broccoli in the same pan 3 min. 5. Make sauce: soy sauce, oyster sauce, garlic, ginger, and a splash of water. 6. Combine everything and serve over rice.",
+    "ingredients": [
+      { "item": "flank steak", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "broccoli florets", "amount": 3, "unit": "cup", "category": "produce" },
+      { "item": "soy sauce", "amount": 4, "unit": "tbsp", "category": "pantry" },
+      { "item": "oyster sauce", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "garlic cloves", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "fresh ginger", "amount": 1, "unit": "tsp", "category": "produce" },
+      { "item": "cornstarch", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "white rice", "amount": 1.5, "unit": "cup", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "salmon-poke-bowl",
+    "name": "Salmon Poke Bowl",
+    "proteinType": "seafood",
+    "goals": ["lose_weight", "muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 15,
+    "budget": "medium",
+    "instructions": "1. Cube sushi-grade salmon and marinate in soy sauce, sesame oil, and sriracha for 5 min. 2. Cook or microwave rice. 3. Build bowl: rice base, salmon, edamame, cucumber, avocado, shredded carrots. 4. Drizzle with extra sauce and top with sesame seeds and scallions.",
+    "ingredients": [
+      { "item": "sushi-grade salmon", "amount": 0.75, "unit": "lb", "category": "protein" },
+      { "item": "short-grain rice", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "edamame", "amount": 0.5, "unit": "cup", "category": "frozen" },
+      { "item": "cucumber", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "avocado", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "shredded carrots", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "soy sauce", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "sriracha", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "sesame seeds", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "scallions", "amount": 2, "unit": "whole", "category": "produce" }
+    ]
+  },
+  {
+    "id": "chicken-caesar-salad",
+    "name": "Chicken Caesar Salad",
+    "proteinType": "poultry",
+    "goals": ["lose_weight", "muscle_gain", "general_health"],
+    "diet": ["none", "gluten_free"],
+    "time_minutes": 15,
+    "budget": "medium",
+    "instructions": "1. Pound chicken breasts thin and season with salt, pepper, and garlic powder. 2. Cook in a skillet 5–6 min per side; let rest and slice. 3. Toss romaine with Caesar dressing and Parmesan. 4. Top with sliced chicken and serve.",
+    "ingredients": [
+      { "item": "chicken breast", "amount": 0.75, "unit": "lb", "category": "protein" },
+      { "item": "romaine lettuce", "amount": 1, "unit": "head", "category": "produce" },
+      { "item": "Caesar dressing", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "Parmesan cheese", "amount": 0.25, "unit": "cup", "category": "dairy" },
+      { "item": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 1, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "turkey-sweet-potato-skillet",
+    "name": "Turkey and Sweet Potato Skillet",
+    "proteinType": "poultry",
+    "goals": ["lose_weight", "muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 30,
+    "budget": "low",
+    "instructions": "1. Dice sweet potatoes into 0.5-inch cubes. 2. Cook in a skillet with olive oil over medium heat 8–10 min until tender. 3. Add ground turkey and cook through, breaking apart. 4. Season with smoked paprika, cumin, garlic powder, salt, and pepper. 5. Add spinach and stir until wilted.",
+    "ingredients": [
+      { "item": "ground turkey", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "sweet potatoes", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "fresh spinach", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "smoked paprika", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "cumin", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+      { "item": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "chicken-fajita-bowl",
+    "name": "Chicken Fajita Bowl",
+    "proteinType": "poultry",
+    "goals": ["muscle_gain", "general_health", "maintain"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 25,
+    "budget": "medium",
+    "instructions": "1. Slice chicken and bell peppers into strips. 2. Cook chicken with fajita seasoning in a hot skillet 6–7 min. 3. Add peppers and onion; cook 4 min more. 4. Serve over rice with black beans, salsa, and guacamole.",
+    "ingredients": [
+      { "item": "chicken breast", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "bell peppers", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "fajita seasoning", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "white rice", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "canned black beans", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "salsa", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "item": "avocado", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "baked-cod-veggies",
+    "name": "Baked Cod with Roasted Veggies",
+    "proteinType": "seafood",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 30,
+    "budget": "medium",
+    "instructions": "1. Preheat oven to 400°F. 2. Toss zucchini, cherry tomatoes, and red onion with olive oil, salt, and pepper; spread on a baking sheet. 3. Lay cod on top; season with lemon zest, garlic, and herbs. 4. Roast 20 min until fish flakes and veggies are tender.",
+    "ingredients": [
+      { "item": "cod fillet", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "zucchini", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "cherry tomatoes", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "red onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "dried thyme", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 3, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "egg-veggie-scramble",
+    "name": "Egg and Veggie Scramble",
+    "proteinType": "eggs",
+    "goals": ["lose_weight", "general_health", "maintain"],
+    "diet": ["none", "dairy_free", "gluten_free", "vegetarian"],
+    "time_minutes": 15,
+    "budget": "low",
+    "instructions": "1. Heat olive oil in a non-stick skillet. 2. Sauté diced bell pepper, mushrooms, and spinach until softened, 3 min. 3. Push veggies to the side; add whisked eggs and scramble gently. 4. Fold everything together, season with salt, pepper, and red pepper flakes.",
+    "ingredients": [
+      { "item": "eggs", "amount": 4, "unit": "whole", "category": "protein" },
+      { "item": "bell pepper", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "mushrooms", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "fresh spinach", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "red pepper flakes", "amount": 0.25, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 1, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "beef-tacos",
+    "name": "Smoky Ground Beef Tacos",
+    "proteinType": "beef",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 20,
+    "budget": "medium",
+    "instructions": "1. Brown ground beef with diced onion until cooked through; drain excess fat. 2. Add smoked paprika, cumin, garlic powder, chili powder, and salt; stir well. 3. Warm flour tortillas. 4. Fill with beef mixture, shredded lettuce, tomato, and lime juice.",
+    "ingredients": [
+      { "item": "ground beef", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "yellow onion", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "flour tortillas", "amount": 8, "unit": "whole", "category": "bakery" },
+      { "item": "shredded lettuce", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "tomato", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "lime", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "smoked paprika", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "cumin", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "chili powder", "amount": 0.5, "unit": "tsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "spinach-mushroom-omelette",
+    "name": "Spinach and Mushroom Omelette",
+    "proteinType": "eggs",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegetarian", "gluten_free"],
+    "time_minutes": 15,
+    "budget": "low",
+    "instructions": "1. Sauté sliced mushrooms and spinach in butter until softened; set aside. 2. Whisk eggs with a splash of water. 3. Pour into a non-stick skillet over medium heat. 4. When edges set, add filling and fold. 5. Top with feta crumbles.",
+    "ingredients": [
+      { "item": "eggs", "amount": 3, "unit": "whole", "category": "protein" },
+      { "item": "mushrooms", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "fresh spinach", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "feta cheese", "amount": 2, "unit": "tbsp", "category": "dairy" },
+      { "item": "butter", "amount": 1, "unit": "tbsp", "category": "dairy" }
+    ]
+  },
+  {
+    "id": "caprese-pasta",
+    "name": "Caprese Pasta",
+    "proteinType": "dairy",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegetarian"],
+    "time_minutes": 20,
+    "budget": "medium",
+    "instructions": "1. Cook pasta according to package directions. 2. While hot, toss with olive oil, halved cherry tomatoes, fresh mozzarella, and fresh basil. 3. Season with salt, pepper, and balsamic glaze. 4. Serve warm or at room temperature.",
+    "ingredients": [
+      { "item": "penne pasta", "amount": 12, "unit": "oz", "category": "pantry" },
+      { "item": "cherry tomatoes", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "fresh mozzarella", "amount": 6, "unit": "oz", "category": "dairy" },
+      { "item": "fresh basil", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "balsamic glaze", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 3, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "black-bean-quesadillas",
+    "name": "Black Bean and Corn Quesadillas",
+    "proteinType": "legumes",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegetarian"],
+    "time_minutes": 15,
+    "budget": "low",
+    "instructions": "1. Mix black beans, corn, shredded cheese, and diced jalapeño. 2. Spread on one half of each flour tortilla; fold over. 3. Cook in a dry skillet over medium heat 2–3 min per side until golden and cheese melts. 4. Serve with salsa and sour cream.",
+    "ingredients": [
+      { "item": "flour tortillas", "amount": 4, "unit": "whole", "category": "bakery" },
+      { "item": "canned black beans", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "frozen corn", "amount": 0.5, "unit": "cup", "category": "frozen" },
+      { "item": "shredded Mexican cheese", "amount": 1.5, "unit": "cup", "category": "dairy" },
+      { "item": "jalapeño", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "salsa", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "item": "sour cream", "amount": 0.25, "unit": "cup", "category": "dairy" }
+    ]
+  },
+  {
+    "id": "shakshuka",
+    "name": "Shakshuka",
+    "proteinType": "eggs",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 25,
+    "budget": "low",
+    "instructions": "1. Sauté diced onion and bell pepper in olive oil until soft. 2. Add garlic, cumin, paprika, and cayenne; cook 1 min. 3. Stir in crushed tomatoes and simmer 10 min. 4. Make wells in the sauce; crack eggs in. 5. Cover and cook 5–8 min until whites set. 6. Top with fresh parsley.",
+    "ingredients": [
+      { "item": "eggs", "amount": 4, "unit": "whole", "category": "protein" },
+      { "item": "canned crushed tomatoes", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "bell pepper", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "cumin", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "smoked paprika", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "cayenne pepper", "amount": 0.25, "unit": "tsp", "category": "pantry" },
+      { "item": "fresh parsley", "amount": 0.25, "unit": "cup", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "pasta-primavera",
+    "name": "Pasta Primavera",
+    "proteinType": "dairy",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegetarian"],
+    "time_minutes": 25,
+    "budget": "medium",
+    "instructions": "1. Cook pasta until al dente. 2. Sauté zucchini, bell pepper, cherry tomatoes, and asparagus in olive oil with garlic, 5 min. 3. Toss hot pasta with vegetables, a ladle of pasta water, Parmesan, and fresh basil. 4. Finish with lemon zest and black pepper.",
+    "ingredients": [
+      { "item": "spaghetti", "amount": 12, "unit": "oz", "category": "pantry" },
+      { "item": "zucchini", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "bell pepper", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "cherry tomatoes", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "asparagus", "amount": 0.5, "unit": "bunch", "category": "produce" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "Parmesan cheese", "amount": 0.5, "unit": "cup", "category": "dairy" },
+      { "item": "fresh basil", "amount": 0.25, "unit": "cup", "category": "produce" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "olive oil", "amount": 3, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "greek-salad",
+    "name": "Greek Salad with Feta",
+    "proteinType": "dairy",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegetarian", "gluten_free"],
+    "time_minutes": 10,
+    "budget": "medium",
+    "instructions": "1. Chop cucumber, tomatoes, and red onion; halve olives. 2. Toss everything with olive oil, red wine vinegar, dried oregano, salt, and pepper. 3. Top with crumbled feta. 4. Let sit 5 min for flavors to meld.",
+    "ingredients": [
+      { "item": "cucumber", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "cherry tomatoes", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "red onion", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "kalamata olives", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "item": "feta cheese", "amount": 4, "unit": "oz", "category": "dairy" },
+      { "item": "red wine vinegar", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "dried oregano", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 3, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "black-bean-buddha-bowl",
+    "name": "Black Bean Buddha Bowl",
+    "proteinType": "legumes",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 20,
+    "budget": "low",
+    "instructions": "1. Cook or microwave quinoa. 2. Roast sweet potato cubes in the oven at 400°F for 20 min. 3. Drain and season black beans. 4. Build bowl: quinoa, sweet potato, black beans, and shredded red cabbage. 5. Drizzle with tahini thinned with lemon juice and a splash of water.",
+    "ingredients": [
+      { "item": "quinoa", "amount": 1, "unit": "cup", "category": "pantry" },
+      { "item": "sweet potato", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "canned black beans", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "red cabbage", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "tahini", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "lentil-soup",
+    "name": "Red Lentil Soup",
+    "proteinType": "legumes",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 40,
+    "budget": "low",
+    "instructions": "1. Sauté diced onion, carrots, and celery in olive oil until soft, 5 min. 2. Add garlic, cumin, coriander, and turmeric; cook 1 min. 3. Add rinsed red lentils and vegetable broth. 4. Simmer 25–30 min until lentils dissolve. 5. Blend half the soup for a creamy texture. 6. Finish with lemon juice and fresh parsley.",
+    "ingredients": [
+      { "item": "red lentils", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "carrots", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "celery stalks", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "cumin", "amount": 1.5, "unit": "tsp", "category": "pantry" },
+      { "item": "coriander", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "turmeric", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+      { "item": "vegetable broth", "amount": 5, "unit": "cup", "category": "pantry" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "fresh parsley", "amount": 0.25, "unit": "cup", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "chickpea-curry",
+    "name": "Chickpea and Spinach Curry",
+    "proteinType": "legumes",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 30,
+    "budget": "low",
+    "instructions": "1. Sauté diced onion and garlic in oil until golden. 2. Add ginger, curry powder, cumin, and garam masala; toast 1 min. 3. Add diced tomatoes and coconut milk; simmer 10 min. 4. Stir in chickpeas and spinach; cook 5 more min. 5. Serve over rice with fresh cilantro.",
+    "ingredients": [
+      { "item": "canned chickpeas", "amount": 2, "unit": "can", "category": "pantry" },
+      { "item": "fresh spinach", "amount": 3, "unit": "cup", "category": "produce" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "fresh ginger", "amount": 1, "unit": "tbsp", "category": "produce" },
+      { "item": "canned diced tomatoes", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "coconut milk", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "curry powder", "amount": 2, "unit": "tsp", "category": "pantry" },
+      { "item": "garam masala", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "white rice", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "fresh cilantro", "amount": 0.25, "unit": "cup", "category": "produce" },
+      { "item": "coconut oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "tofu-stirfry",
+    "name": "Crispy Tofu Stir Fry",
+    "proteinType": "plant",
+    "goals": ["lose_weight", "muscle_gain", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 25,
+    "budget": "low",
+    "instructions": "1. Press extra-firm tofu dry; cube and toss with cornstarch. 2. Pan-fry in oil until golden and crispy all over, 8 min. 3. Remove tofu; stir-fry bok choy, broccoli, and snap peas 3 min. 4. Add tofu back with a sauce of soy sauce, rice vinegar, sesame oil, and maple syrup. 5. Serve over rice.",
+    "ingredients": [
+      { "item": "extra-firm tofu", "amount": 14, "unit": "oz", "category": "protein" },
+      { "item": "bok choy", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "broccoli florets", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "snap peas", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "soy sauce", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "rice vinegar", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "maple syrup", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "cornstarch", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "white rice", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "coconut oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "avocado-toast-hemp",
+    "name": "Avocado Toast with Hemp Seeds",
+    "proteinType": "plant",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegan", "vegetarian", "dairy_free"],
+    "time_minutes": 10,
+    "budget": "medium",
+    "instructions": "1. Toast sourdough slices until golden. 2. Mash ripe avocado with lemon juice, salt, and red pepper flakes. 3. Spread on toast. 4. Top with hemp seeds, sliced cherry tomatoes, and a drizzle of olive oil.",
+    "ingredients": [
+      { "item": "sourdough bread", "amount": 2, "unit": "slice", "category": "bakery" },
+      { "item": "avocado", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "cherry tomatoes", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "hemp seeds", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "lemon", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "red pepper flakes", "amount": 0.25, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 1, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "peanut-noodles",
+    "name": "Peanut Noodles with Vegetables",
+    "proteinType": "plant",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegan", "vegetarian", "dairy_free"],
+    "time_minutes": 15,
+    "budget": "low",
+    "instructions": "1. Cook soba noodles per package; rinse under cold water. 2. Whisk peanut butter, soy sauce, rice vinegar, sesame oil, lime juice, and a splash of water into a smooth sauce. 3. Toss noodles with sauce, shredded carrots, cucumber, edamame, and scallions. 4. Top with crushed peanuts.",
+    "ingredients": [
+      { "item": "soba noodles", "amount": 8, "unit": "oz", "category": "pantry" },
+      { "item": "peanut butter", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "shredded carrots", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "cucumber", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "edamame", "amount": 0.5, "unit": "cup", "category": "frozen" },
+      { "item": "scallions", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "soy sauce", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "rice vinegar", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "lime", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "roasted peanuts", "amount": 0.25, "unit": "cup", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "sweet-potato-black-bean-tacos",
+    "name": "Sweet Potato and Black Bean Tacos",
+    "proteinType": "legumes",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 30,
+    "budget": "low",
+    "instructions": "1. Roast diced sweet potato with cumin, chili powder, and olive oil at 400°F for 25 min. 2. Warm black beans with garlic and a squeeze of lime. 3. Warm corn tortillas. 4. Build tacos with sweet potato, black beans, red cabbage slaw, and avocado. 5. Finish with lime juice and cilantro.",
+    "ingredients": [
+      { "item": "sweet potatoes", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "canned black beans", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "corn tortillas", "amount": 8, "unit": "whole", "category": "bakery" },
+      { "item": "red cabbage", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "avocado", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "lime", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "fresh cilantro", "amount": 0.25, "unit": "cup", "category": "produce" },
+      { "item": "cumin", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "chili powder", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "garlic cloves", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "quinoa-power-bowl",
+    "name": "Quinoa Power Bowl",
+    "proteinType": "plant",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 25,
+    "budget": "medium",
+    "instructions": "1. Cook quinoa in vegetable broth for extra flavor. 2. Roast chickpeas with smoked paprika and olive oil at 400°F for 20 min until crispy. 3. Steam broccoli and kale. 4. Build bowl with quinoa, crispy chickpeas, broccoli, kale, and avocado. 5. Drizzle with lemon tahini sauce.",
+    "ingredients": [
+      { "item": "quinoa", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "canned chickpeas", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "broccoli florets", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "kale", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "avocado", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "tahini", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "smoked paprika", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "vegetable broth", "amount": 2, "unit": "cup", "category": "pantry" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "white-bean-tomato-stew",
+    "name": "White Bean and Tomato Stew",
+    "proteinType": "legumes",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 35,
+    "budget": "low",
+    "instructions": "1. Sauté diced onion, garlic, and celery in olive oil until softened. 2. Add crushed tomatoes, white beans, vegetable broth, and Italian seasoning. 3. Simmer 20–25 min. 4. Stir in baby kale until wilted. 5. Season with salt, pepper, and a drizzle of good olive oil.",
+    "ingredients": [
+      { "item": "canned white beans", "amount": 2, "unit": "can", "category": "pantry" },
+      { "item": "canned crushed tomatoes", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "celery stalks", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "kale", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "vegetable broth", "amount": 2, "unit": "cup", "category": "pantry" },
+      { "item": "Italian seasoning", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 3, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "edamame-rice-bowl",
+    "name": "Edamame and Brown Rice Bowl",
+    "proteinType": "plant",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 20,
+    "budget": "low",
+    "instructions": "1. Cook brown rice (or use microwaveable pouches). 2. Thaw edamame. 3. Slice cucumber and shred carrots. 4. Build bowl: rice, edamame, cucumber, carrots, and sliced avocado. 5. Dress with soy sauce, rice vinegar, and sesame oil. 6. Sprinkle with sesame seeds.",
+    "ingredients": [
+      { "item": "brown rice", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "edamame", "amount": 1.5, "unit": "cup", "category": "frozen" },
+      { "item": "cucumber", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "shredded carrots", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "avocado", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "soy sauce", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "rice vinegar", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame seeds", "amount": 1, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "veggie-frittata",
+    "name": "Oven-Baked Veggie Frittata",
+    "proteinType": "eggs",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegetarian", "gluten_free"],
+    "time_minutes": 30,
+    "budget": "low",
+    "instructions": "1. Preheat oven to 375°F. 2. Sauté diced zucchini, bell pepper, and cherry tomatoes in an oven-safe skillet until soft. 3. Whisk eggs with milk, salt, pepper, and feta; pour over vegetables. 4. Cook on stovetop 2 min, then transfer to oven. 5. Bake 15–18 min until set.",
+    "ingredients": [
+      { "item": "eggs", "amount": 6, "unit": "whole", "category": "protein" },
+      { "item": "zucchini", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "bell pepper", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "cherry tomatoes", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "feta cheese", "amount": 3, "unit": "oz", "category": "dairy" },
+      { "item": "whole milk", "amount": 0.25, "unit": "cup", "category": "dairy" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "stuffed-peppers",
+    "name": "Cheese and Veggie Stuffed Peppers",
+    "proteinType": "dairy",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegetarian", "gluten_free"],
+    "time_minutes": 50,
+    "budget": "medium",
+    "instructions": "1. Preheat oven to 375°F. 2. Cook brown rice; mix with sautéed mushrooms, spinach, and black beans. 3. Cut tops off bell peppers and remove seeds. 4. Fill peppers with rice mixture and top with shredded mozzarella. 5. Bake 35–40 min until peppers are tender and cheese is bubbly.",
+    "ingredients": [
+      { "item": "bell peppers", "amount": 4, "unit": "whole", "category": "produce" },
+      { "item": "brown rice", "amount": 1, "unit": "cup", "category": "pantry" },
+      { "item": "mushrooms", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "fresh spinach", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "canned black beans", "amount": 0.5, "unit": "can", "category": "pantry" },
+      { "item": "shredded mozzarella", "amount": 1, "unit": "cup", "category": "dairy" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "overnight-oats",
+    "name": "Overnight Oats with Berries",
+    "proteinType": "dairy",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegetarian", "gluten_free"],
+    "time_minutes": 5,
+    "budget": "low",
+    "instructions": "1. Combine rolled oats, milk, Greek yogurt, chia seeds, and honey in a jar. 2. Stir well and refrigerate overnight (or at least 4 hours). 3. In the morning, top with fresh berries and a sprinkle of granola.",
+    "ingredients": [
+      { "item": "rolled oats", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "item": "whole milk", "amount": 0.5, "unit": "cup", "category": "dairy" },
+      { "item": "Greek yogurt", "amount": 0.25, "unit": "cup", "category": "dairy" },
+      { "item": "chia seeds", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "honey", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "mixed berries", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "granola", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "smoothie-bowl",
+    "name": "Tropical Smoothie Bowl",
+    "proteinType": "plant",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 10,
+    "budget": "medium",
+    "instructions": "1. Blend frozen mango, frozen banana, coconut milk, and protein powder until thick and smooth. 2. Pour into a bowl. 3. Top with sliced banana, coconut flakes, hemp seeds, and fresh berries.",
+    "ingredients": [
+      { "item": "frozen mango chunks", "amount": 1, "unit": "cup", "category": "frozen" },
+      { "item": "frozen banana", "amount": 1, "unit": "whole", "category": "frozen" },
+      { "item": "coconut milk", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "item": "banana", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "coconut flakes", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "hemp seeds", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "item": "mixed berries", "amount": 0.5, "unit": "cup", "category": "produce" }
+    ]
+  },
+  {
+    "id": "zucchini-noodles-marinara",
+    "name": "Zucchini Noodles with Marinara",
+    "proteinType": "plant",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free", "gluten_free"],
+    "time_minutes": 20,
+    "budget": "low",
+    "instructions": "1. Spiralize zucchini or use a vegetable peeler to make ribbons. 2. Sauté garlic in olive oil 1 min. 3. Add cherry tomatoes and cook until they burst, 5 min. 4. Add marinara sauce and heat through. 5. Toss with zucchini noodles for 1 min — just enough to warm them. 6. Top with fresh basil.",
+    "ingredients": [
+      { "item": "zucchini", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "marinara sauce", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "cherry tomatoes", "amount": 1, "unit": "cup", "category": "produce" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "fresh basil", "amount": 0.25, "unit": "cup", "category": "produce" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "egg-salad-wraps",
+    "name": "Egg Salad Lettuce Wraps",
+    "proteinType": "eggs",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 10,
+    "budget": "low",
+    "instructions": "1. Hard-boil eggs, peel, and chop. 2. Mix with diced celery, Dijon mustard, Greek yogurt or avocado mayo, salt, pepper, and fresh dill. 3. Spoon into butter lettuce cups. 4. Top with sliced cucumber and paprika.",
+    "ingredients": [
+      { "item": "eggs", "amount": 6, "unit": "whole", "category": "protein" },
+      { "item": "celery stalks", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "Dijon mustard", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "Greek yogurt", "amount": 3, "unit": "tbsp", "category": "dairy" },
+      { "item": "fresh dill", "amount": 2, "unit": "tbsp", "category": "produce" },
+      { "item": "butter lettuce", "amount": 1, "unit": "head", "category": "produce" },
+      { "item": "cucumber", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "smoked paprika", "amount": 0.25, "unit": "tsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "turkey-veggie-soup",
+    "name": "Turkey and Vegetable Soup",
+    "proteinType": "poultry",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 45,
+    "budget": "low",
+    "instructions": "1. Sauté diced onion, carrots, and celery in olive oil until soft. 2. Add garlic, Italian seasoning, and chicken broth; bring to a simmer. 3. Add diced sweet potato and cook 15 min. 4. Add ground turkey and cook through, breaking apart. 5. Stir in kale and cook 3 min more. 6. Season and serve.",
+    "ingredients": [
+      { "item": "ground turkey", "amount": 0.75, "unit": "lb", "category": "protein" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "carrots", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "celery stalks", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "sweet potato", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "kale", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "chicken broth", "amount": 6, "unit": "cup", "category": "pantry" },
+      { "item": "Italian seasoning", "amount": 1.5, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "grain-bowl-tahini",
+    "name": "Grain Bowl with Lemon Tahini",
+    "proteinType": "plant",
+    "goals": ["lose_weight", "general_health"],
+    "diet": ["vegan", "vegetarian", "dairy_free"],
+    "time_minutes": 20,
+    "budget": "medium",
+    "instructions": "1. Cook farro per package instructions. 2. Roast diced beets and chickpeas with olive oil and cumin at 400°F for 20 min. 3. Make dressing: tahini, lemon juice, garlic, and water. 4. Build bowl: farro, beets, chickpeas, arugula, and cucumber. 5. Drizzle with tahini dressing.",
+    "ingredients": [
+      { "item": "farro", "amount": 1, "unit": "cup", "category": "pantry" },
+      { "item": "canned chickpeas", "amount": 1, "unit": "can", "category": "pantry" },
+      { "item": "beets", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "arugula", "amount": 2, "unit": "cup", "category": "produce" },
+      { "item": "cucumber", "amount": 0.5, "unit": "whole", "category": "produce" },
+      { "item": "tahini", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "lemon", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "cumin", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "veggie-egg-fried-rice",
+    "name": "Veggie Egg Fried Rice",
+    "proteinType": "eggs",
+    "goals": ["general_health", "maintain"],
+    "diet": ["vegetarian", "dairy_free"],
+    "time_minutes": 20,
+    "budget": "low",
+    "instructions": "1. Beat eggs and scramble in a wok with a bit of oil; set aside. 2. Stir-fry diced carrots, peas, and corn in the same wok. 3. Add day-old rice and press into the hot pan; let sit 1 min. 4. Stir in soy sauce, sesame oil, and eggs. 5. Top with scallions and sesame seeds.",
+    "ingredients": [
+      { "item": "eggs", "amount": 3, "unit": "whole", "category": "protein" },
+      { "item": "white rice", "amount": 2, "unit": "cup", "category": "pantry" },
+      { "item": "frozen peas", "amount": 0.5, "unit": "cup", "category": "frozen" },
+      { "item": "shredded carrots", "amount": 0.5, "unit": "cup", "category": "produce" },
+      { "item": "frozen corn", "amount": 0.5, "unit": "cup", "category": "frozen" },
+      { "item": "soy sauce", "amount": 3, "unit": "tbsp", "category": "pantry" },
+      { "item": "sesame oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "scallions", "amount": 2, "unit": "whole", "category": "produce" },
+      { "item": "sesame seeds", "amount": 1, "unit": "tbsp", "category": "pantry" },
+      { "item": "vegetable oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "shrimp-tacos",
+    "name": "Spicy Shrimp Tacos",
+    "proteinType": "seafood",
+    "goals": ["general_health", "lose_weight"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 20,
+    "budget": "medium",
+    "instructions": "1. Toss shrimp with chili powder, garlic powder, cumin, and olive oil. 2. Cook in a hot skillet 1–2 min per side until pink. 3. Warm corn tortillas. 4. Build tacos with shrimp, mango salsa, shredded cabbage, and a squeeze of lime.",
+    "ingredients": [
+      { "item": "shrimp", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "corn tortillas", "amount": 8, "unit": "whole", "category": "bakery" },
+      { "item": "shredded cabbage", "amount": 1.5, "unit": "cup", "category": "produce" },
+      { "item": "mango", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "lime", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "chili powder", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+      { "item": "cumin", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+      { "item": "olive oil", "amount": 1, "unit": "tbsp", "category": "pantry" }
+    ]
+  },
+  {
+    "id": "turkey-meatball-bowl",
+    "name": "Turkey Meatball Rice Bowl",
+    "proteinType": "poultry",
+    "goals": ["muscle_gain", "general_health"],
+    "diet": ["none", "dairy_free"],
+    "time_minutes": 40,
+    "budget": "medium",
+    "instructions": "1. Mix ground turkey with garlic, onion powder, dried herbs, egg, and breadcrumbs. 2. Form into balls and bake at 400°F for 20 min. 3. Heat marinara sauce. 4. Serve meatballs over rice with sauce and a side of steamed broccoli.",
+    "ingredients": [
+      { "item": "ground turkey", "amount": 1.25, "unit": "lb", "category": "protein" },
+      { "item": "eggs", "amount": 1, "unit": "whole", "category": "protein" },
+      { "item": "breadcrumbs", "amount": 0.25, "unit": "cup", "category": "pantry" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "onion powder", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "Italian seasoning", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "item": "marinara sauce", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "white rice", "amount": 1.5, "unit": "cup", "category": "pantry" },
+      { "item": "broccoli florets", "amount": 2, "unit": "cup", "category": "produce" }
+    ]
+  },
+  {
+    "id": "chicken-rice-soup",
+    "name": "Comforting Chicken and Rice Soup",
+    "proteinType": "poultry",
+    "goals": ["general_health", "maintain"],
+    "diet": ["none", "dairy_free", "gluten_free"],
+    "time_minutes": 45,
+    "budget": "low",
+    "instructions": "1. Sauté diced onion, carrots, and celery in olive oil until soft. 2. Add garlic, fresh thyme, and bay leaf; cook 1 min. 3. Add chicken broth and bring to a boil. 4. Add chicken breasts and simmer 20 min until cooked. 5. Remove chicken, shred, and return to pot with cooked rice. 6. Season and serve.",
+    "ingredients": [
+      { "item": "chicken breast", "amount": 1, "unit": "lb", "category": "protein" },
+      { "item": "white rice", "amount": 0.75, "unit": "cup", "category": "pantry" },
+      { "item": "yellow onion", "amount": 1, "unit": "whole", "category": "produce" },
+      { "item": "carrots", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "celery stalks", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "garlic cloves", "amount": 3, "unit": "whole", "category": "produce" },
+      { "item": "fresh thyme", "amount": 3, "unit": "sprig", "category": "produce" },
+      { "item": "chicken broth", "amount": 7, "unit": "cup", "category": "pantry" },
+      { "item": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" }
+    ]
+  }
+]
