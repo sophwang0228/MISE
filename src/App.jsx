@@ -1,25 +1,31 @@
 import { useState, useEffect } from 'react';
 import Survey from './components/Survey.jsx';
 import MealPlan from './components/MealPlan.jsx';
+import ThemePicker, { THEMES } from './components/ThemePicker.jsx';
 import recipes from './data/recipes.json';
 import { filterRecipes, selectMeals, swapMeal } from './utils/matcher.js';
 
 const STORAGE_KEY = 'mise_saved_plan';
+const THEME_KEY   = 'mise_theme';
+
+function getThemeVars(themeId) {
+  return THEMES.find((t) => t.id === themeId)?.vars ?? THEMES[0].vars;
+}
 
 function Landing({ onStart, hasSavedPlan, onLoadSaved }) {
   return (
     <div className="landing">
       <div className="landing-inner">
-        <div className="landing-eyebrow">Friction-Free Nutrition</div>
+        <div className="landing-eyebrow">✨ Friction-Free Nutrition</div>
         <h1 className="landing-title">
           Stop <em>deciding</em> what to eat.<br />
           Start <em>planning</em> it.
         </h1>
         <p className="landing-body">
-          Most nutrition apps demand daily logging — exactly when your willpower is lowest.
-          MISE flips the model: one weekly survey, a personalized meal plan, and a
-          ready-to-use grocery list. Front-load the thinking so you never have to decide
-          at 7pm on a Tuesday.
+          Most nutrition apps demand daily logging — exactly when your willpower is
+          lowest. MISE flips the model: one short weekly survey, a personalized meal
+          plan, and a ready-made grocery list. Front-load the thinking so you never
+          have to decide at 7pm on a Tuesday.
         </p>
 
         <div className="landing-cta-row">
@@ -37,7 +43,7 @@ function Landing({ onStart, hasSavedPlan, onLoadSaved }) {
           <div className="pillar">
             <span className="pillar-num">01</span>
             <h3>Survey</h3>
-            <p>5 questions, under 60 seconds. No account required.</p>
+            <p>5 questions, under 60 seconds. No account needed.</p>
           </div>
           <div className="pillar">
             <span className="pillar-num">02</span>
@@ -47,12 +53,12 @@ function Landing({ onStart, hasSavedPlan, onLoadSaved }) {
           <div className="pillar">
             <span className="pillar-num">03</span>
             <h3>Shop</h3>
-            <p>One deduplicated list, sorted by store section. That's it.</p>
+            <p>One deduplicated list, sorted by store section.</p>
           </div>
         </div>
 
         <footer className="landing-footer">
-          <span>Built on behavioral science — no daily logging, no calorie counting, no guilt.</span>
+          Built on behavioral science — no daily logging, no calorie counting, no guilt.
         </footer>
       </div>
     </div>
@@ -60,16 +66,26 @@ function Landing({ onStart, hasSavedPlan, onLoadSaved }) {
 }
 
 export default function App() {
-  const [phase, setPhase] = useState('landing'); // 'landing' | 'survey' | 'results'
+  const [phase, setPhase] = useState('landing');
   const [preferences, setPreferences] = useState(null);
   const [plan, setPlan] = useState([]);
   const [filteredPool, setFilteredPool] = useState([]);
   const [hasSavedPlan, setHasSavedPlan] = useState(false);
+  const [themeId, setThemeId] = useState(
+    () => localStorage.getItem(THEME_KEY) ?? 'rose'
+  );
+
+  const themeVars = getThemeVars(themeId);
 
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) setHasSavedPlan(true);
   }, []);
+
+  function handleThemeChange(id) {
+    setThemeId(id);
+    localStorage.setItem(THEME_KEY, id);
+  }
 
   function buildPlan(prefs) {
     const filtered = filterRecipes(recipes, prefs);
@@ -78,8 +94,6 @@ export default function App() {
     setPlan(selected);
     setPreferences(prefs);
     setPhase('results');
-
-    // Persist
     localStorage.setItem(STORAGE_KEY, JSON.stringify({ prefs, plan: selected }));
   }
 
@@ -107,44 +121,48 @@ export default function App() {
         setPhase('results');
       }
     } catch {
-      // Corrupted save — just ignore
       localStorage.removeItem(STORAGE_KEY);
     }
   }
 
-  if (phase === 'landing') {
+  const content = (() => {
+    if (phase === 'landing') {
+      return (
+        <Landing
+          onStart={() => setPhase('survey')}
+          hasSavedPlan={hasSavedPlan}
+          onLoadSaved={handleLoadSaved}
+        />
+      );
+    }
+    if (phase === 'survey') {
+      return <Survey onComplete={buildPlan} />;
+    }
+    if (phase === 'results' && plan.length > 0) {
+      return (
+        <MealPlan
+          plan={plan}
+          preferences={preferences}
+          onSwap={handleSwap}
+          onReset={handleReset}
+        />
+      );
+    }
     return (
-      <Landing
-        onStart={() => setPhase('survey')}
-        hasSavedPlan={hasSavedPlan}
-        onLoadSaved={handleLoadSaved}
-      />
+      <div className="no-results">
+        <h2>No recipes matched 😔</h2>
+        <p>Try loosening your cooking time or dietary restrictions.</p>
+        <button className="cta-primary" onClick={() => setPhase('survey')}>
+          Try again
+        </button>
+      </div>
     );
-  }
+  })();
 
-  if (phase === 'survey') {
-    return <Survey onComplete={buildPlan} />;
-  }
-
-  if (phase === 'results' && plan.length > 0) {
-    return (
-      <MealPlan
-        plan={plan}
-        preferences={preferences}
-        onSwap={handleSwap}
-        onReset={handleReset}
-      />
-    );
-  }
-
-  // Edge case: no recipes matched
   return (
-    <div className="no-results">
-      <h2>No recipes matched your criteria</h2>
-      <p>Try loosening your cooking time or dietary restrictions.</p>
-      <button className="cta-primary" onClick={() => setPhase('survey')}>
-        Try again
-      </button>
+    <div style={themeVars}>
+      {content}
+      <ThemePicker currentTheme={themeId} onChange={handleThemeChange} />
     </div>
   );
 }
