@@ -167,14 +167,67 @@ ul     { list-style: none; }
   padding: 3rem 1.5rem;
 }
 
-.landing-inner { max-width: 680px; width: 100%; }
+.landing-layout {
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3.5rem;
+  align-items: center;
+}
 
-.landing-hero-emoji {
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
-  margin-bottom: 2rem;
-  display: block;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+.landing-text { min-width: 0; }
+
+/* Food photo grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.food-tile {
+  border-radius: var(--radius-md);
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+/* Dark overlay so text/emoji is readable over photos */
+.food-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.42) 100%);
+  z-index: 0;
+}
+.food-tile:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: var(--shadow);
+}
+.food-tile-emoji {
+  font-size: 2.4rem;
+  line-height: 1;
+  filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
+  position: relative;
+  z-index: 1;
+}
+.food-tile-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.88);
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .landing-eyebrow {
@@ -634,6 +687,107 @@ ul     { list-style: none; }
 }
 .recipe-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 
+/* Card image header */
+.card-image-area {
+  margin: -1.5rem -1.5rem 1.25rem;
+  height: 160px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Photo fills the area */
+.card-img-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Dark gradient scrim over photo for readability */
+.card-image-area:not(.no-photo)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.45) 100%);
+  z-index: 1;
+}
+
+/* Emoji: small badge at top-left when photo is present */
+.card-img-emoji {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.75rem;
+  z-index: 2;
+  font-size: 1.5rem;
+  line-height: 1;
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Emoji: large centered + floating when no photo (gradient fallback) */
+.card-image-area.no-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 35%, rgba(255,255,255,0.3), transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.12), transparent 40%);
+}
+.card-image-area.no-photo .card-img-emoji {
+  position: relative;
+  top: auto; left: auto;
+  font-size: 4.5rem;
+  background: none;
+  backdrop-filter: none;
+  border-radius: 0;
+  width: auto; height: auto;
+  box-shadow: none;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.1));
+  animation: floatEmoji 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-7px); }
+}
+
+.card-img-day-label {
+  position: absolute;
+  bottom: 0.65rem;
+  right: 0.85rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.92);
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+  padding: 0.22rem 0.65rem;
+  border-radius: 100px;
+  z-index: 2;
+}
+.card-image-area.no-photo .card-img-day-label {
+  color: rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.65);
+}
+
+.card-body { padding: 0; }
+
 /* Card anatomy — new class names */
 .card-day-label {
   font-size: 0.65rem;
@@ -998,6 +1152,14 @@ ul     { list-style: none; }
    RESPONSIVE
 ═══════════════════════════════════════════ */
 
+@media (max-width: 900px) {
+  .landing-layout {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+  }
+  .food-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 @media (max-width: 600px) {
   .plan-header     { padding: 0.9rem 1.25rem; }
   .hero-banner     { padding: 1.75rem 1.25rem 1.5rem; }
@@ -1007,6 +1169,7 @@ ul     { list-style: none; }
   .landing-pillars { grid-template-columns: 1fr; }
   .cogsci-panel    { padding: 2rem 1.25rem; }
   .theme-picker    { bottom: 1rem; right: 1rem; }
+  .food-grid       { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ── Focus / scrollbar ── */

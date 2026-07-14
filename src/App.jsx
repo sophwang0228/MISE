@@ -8,57 +8,85 @@ import { filterRecipes, selectMeals, swapMeal } from './utils/matcher.js';
 const STORAGE_KEY = 'mise_saved_plan';
 const THEME_KEY   = 'mise_theme';
 
+const UB = 'https://images.unsplash.com/photo-';
+const SQ = '?auto=format&fit=crop&w=300&h=300&q=80';
+
+const FOOD_TILES = [
+  { emoji: '🍗', color: '#f59e0b', label: 'Chicken', img: `${UB}1598103442097-8b74394b95c3${SQ}` }, // roasted chicken
+  { emoji: '🐟', color: '#3b82f6', label: 'Seafood', img: `${UB}1519708227418-c8fd9a32b7a2${SQ}` }, // salmon fillet
+  { emoji: '🥗', color: '#22c55e', label: 'Bowls',   img: `${UB}1546069901-ba9599a7e63c${SQ}`  }, // poke / grain bowl
+  { emoji: '🌶️', color: '#ef4444', label: 'Curry',   img: `${UB}1585937421612-70a008356fbe${SQ}` }, // Indian curry
+  { emoji: '🥚', color: '#eab308', label: 'Eggs',    img: `${UB}1482049016688-2d3e1b311543${SQ}` }, // egg dish
+  { emoji: '🥦', color: '#10b981', label: 'Veggies', img: `${UB}1512621776951-a57141f2eefd${SQ}` }, // vegetables plate
+];
+
 function Landing({ onStart, hasSavedPlan, onLoadSaved }) {
   return (
     <div className="landing">
-      <div className="landing-inner">
+      <div className="landing-layout">
 
-        <div className="landing-hero-emoji" aria-hidden="true">
-          🥗 🍳 🐟 🫘 🥦
-        </div>
+        {/* Left: text column */}
+        <div className="landing-text">
+          <div className="landing-eyebrow">✨ Friction-Free Nutrition</div>
+          <h1 className="landing-title">
+            Stop deciding what<br />to eat every day.
+          </h1>
+          <p className="landing-body">
+            Plan once a week, eat well all week. One short survey → a personalized
+            meal plan → a ready-to-use grocery list. No daily logging. No decision
+            fatigue at 7pm.
+          </p>
 
-        <div className="landing-eyebrow">✨ Friction-Free Nutrition</div>
-        <h1 className="landing-title">
-          Stop deciding what<br />to eat every day.
-        </h1>
-        <p className="landing-body">
-          Plan once a week, eat well all week. One short survey → a personalized
-          meal plan → a ready-to-use grocery list. No daily logging. No decision
-          fatigue at 7pm.
-        </p>
-
-        <div className="landing-cta-row">
-          <button className="cta-primary" onClick={onStart}>
-            Build my week →
-          </button>
-          {hasSavedPlan && (
-            <button className="cta-secondary" onClick={onLoadSaved}>
-              📋 Load last plan
+          <div className="landing-cta-row">
+            <button className="cta-primary" onClick={onStart}>
+              Build my week →
             </button>
-          )}
+            {hasSavedPlan && (
+              <button className="cta-secondary" onClick={onLoadSaved}>
+                📋 Load last plan
+              </button>
+            )}
+          </div>
+
+          <div className="landing-pillars">
+            <div className="pillar">
+              <span className="pillar-emoji">💬</span>
+              <h3>5 questions</h3>
+              <p>Goal, diet, time, meals, budget — takes under 60 seconds.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-emoji">🎯</span>
+              <h3>Matched meals</h3>
+              <p>45 hand-tagged recipes filtered exactly to your preferences.</p>
+            </div>
+            <div className="pillar">
+              <span className="pillar-emoji">🛒</span>
+              <h3>One list</h3>
+              <p>Ingredients merged and grouped by store aisle. Done.</p>
+            </div>
+          </div>
+
+          <div className="landing-science-note">
+            🧠 Grounded in behavioral science — precommitment, friction reduction, and ego depletion theory.
+          </div>
         </div>
 
-        <div className="landing-pillars">
-          <div className="pillar">
-            <span className="pillar-emoji">💬</span>
-            <h3>5 questions</h3>
-            <p>Goal, diet, time, meals, budget — takes under 60 seconds.</p>
-          </div>
-          <div className="pillar">
-            <span className="pillar-emoji">🎯</span>
-            <h3>Matched meals</h3>
-            <p>45 hand-tagged recipes filtered exactly to your preferences.</p>
-          </div>
-          <div className="pillar">
-            <span className="pillar-emoji">🛒</span>
-            <h3>One list</h3>
-            <p>Ingredients merged and grouped by store aisle. Done.</p>
-          </div>
+        {/* Right: food photo grid */}
+        <div className="food-grid" aria-hidden="true">
+          {FOOD_TILES.map(({ emoji, color, label, img }) => (
+            <div
+              key={label}
+              className="food-tile"
+              style={{
+                background: `url(${img}) center/cover, linear-gradient(145deg, ${color}18 0%, ${color}55 100%)`,
+              }}
+            >
+              <span className="food-tile-emoji">{emoji}</span>
+              <span className="food-tile-label">{label}</span>
+            </div>
+          ))}
         </div>
 
-        <div className="landing-science-note">
-          🧠 Grounded in behavioral science — precommitment, friction reduction, and ego depletion theory.
-        </div>
       </div>
     </div>
   );
